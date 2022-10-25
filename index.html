@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ZH-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>庄嘉豪的小网站</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+
+        font-family: Arial;
+      }
+      * {
+        border: 1px solid black;
+      }
+      .yy {
+        box-shadow: 10px 10px 5px #888888;
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .flex-row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      /* 按钮加图片设置 */
+      .btn_tp {
+        margin: 0 auto;
+        height: 40px;
+        position: relative;
+
+        left: 50%;
+        margin-left: -31.5px;
+        margin-top: -31.3px;
+      }
+      /* 搜索栏 */
+      * {
+        box-sizing: border-box;
+      }
+
+      form.example input[type="text"] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196f3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+
+      form.example button:hover {
+        background: #0b7dda;
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- 目录 -->
+    <div style="width: 200px; z-index: 2" class="baiSe">
+      <div
+        style="
+          padding: 20px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+      >
+        驴live
+      </div>
+    </div>
+    <!-- 主区 -->
+    <div class="flex1 flex column">
+      <!-- 主区标题 -->
+      <div class="baiSe yy flex-row-reverse" style="height: 60px; z-index: 1">
+        <div class="flex" style="height: 60px">
+          <form
+            class="example"
+            action="/"
+            style="margin: auto; max-width: 300px"
+          >
+            <input type="text" placeholder="搜索.." name="search2" />
+            <button type="submit" style="height: 40px">
+              <i class="fa fa-search"></i>
+              <div class="btn_tp">
+                <img
+                  src="搜索图标.jpg"
+                  alt=""
+                  style="height: 40px; width: 60px"
+                />
+              </div>
+            </button>
+          </form>
+        </div>
+        <div></div>
+      </div>
+      <!-- 主区内容 -->
+      <div style="overflow: auto" class="flex1 flex">
+        <!-- 左区 -->
+        <div style="flex: 3" class="flex column mg8">
+          <!-- 头部 -->
+          <div class="flex">
+            <!--  -->
+            <div style="height: 100px" class="flex1 baiSe mg8 yy"></div>
+            <div style="height: 100px" class="flex1 baiSe mg8 yy"></div>
+            <div style="height: 100px" class="flex1 baiSe mg8 yy"></div>
+            <div style="height: 100px" class="flex1 baiSe mg8 yy"></div>
+          </div>
+          <!--  -->
+          <div class="flex column">
+            <!--  -->
+            <div style="height: 160px" class="baiSe mgt8 yy"></div>
+            <div style="height: 160px" class="baiSe mgt8 yy"></div>
+            <div style="height: 160px" class="baiSe mgt8 yy"></div>
+          </div>
+        </div>
+        <!-- 右区 -->
+        <div style="flex: 1" class="flex column mgr8 mgt8">
+          <!-- 上部 -->
+          <div style="height: 150px" class="baiSe yy"></div>
+          <!-- 下部 -->
+          <div style="height: 300px" class="baiSe mgt8 yy"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
